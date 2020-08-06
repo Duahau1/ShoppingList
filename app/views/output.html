@@ -1,0 +1,28 @@
+<div class="ui">
+    <div class="ui header">Grocery List
+        <i class="shopping cart icon"></i>
+    </div>
+    <div class=" ui container ">
+    <div class="ui celled list">
+        <div class="item" ng-repeat="foo in food |orderBy:'quantity'">
+            <div class="content">
+                <button class="ui icon button" ng-click="toggle(foo)"id="cross">
+                    <i class="square outline icon" ng-class ="foo.completed ? 'check icon' :'square outline icon' "></i>
+                </button>
+                <span ng-class ="{strike : foo.completed}">{{foo.name | uppercase}}
+                </span>
+
+                <button class="ui icon button" ng-click="removeItem(foo)">
+                    <i class="trash icon"></i>
+                </button>
+                <a href="#/additem/{{foo._id}}"><button class="ui icon button">
+                    <i class="edit icon"></i>
+                </button></a>
+                <input ng-class ="{strike : foo.completed}" style="float: right; margin:5px;" size="3" disabled value={{foo.quantity}}> </input>
+
+            </div>   
+        </div>
+    </div>
+    <a href="#/additem"><button id="add"class=" fluid ui button">Add Item</button></a>
+    </div>
+</div>

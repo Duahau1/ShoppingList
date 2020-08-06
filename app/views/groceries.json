@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "completed": false,
+        "name": "carrots",
+        "quantity": 3
+    },
+    {
+        "id": 2,
+        "completed": false,
+        "name": "cabagge",
+        "quantity": 3
+    },
+    {
+        "id": 3,
+        "completed": false,
+        "name": "tomato",
+        "quantity": 2
+    },
+    {
+        "id": 4,
+        "completed": false,
+        "name": "banana",
+        "quantity": 3
+    },
+    {
+        "id": 5,
+        "completed": false,
+        "name": "zuchinni",
+        "quantity": 5
+    },
+    {
+        "id": 6,
+        "completed": false,
+        "name": "potatoes",
+        "quantity": 1
+    },
+    {
+        "id": 7,
+        "completed": false,
+        "name": "snacks",
+        "quantity": 2
+    },
+    {
+        "id": 8,
+        "completed": false,
+        "name": "beer",
+        "quantity": 6
+    },
+    {
+        "id": 9,
+        "completed": false,
+        "name": "oil",
+        "quantity": 2
+    },
+    {
+        "id": 10,
+        "completed": false,
+        "name": "salt",
+        "quantity": 1
+    },
+    {
+        "id": 11,
+        "completed": false,
+        "name": "garlic",
+        "quantity": 4
+    }
+]

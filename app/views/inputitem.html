@@ -1,0 +1,21 @@
+<div class="ui">
+    <div class="ui header">Grocery List
+        <i class="shopping cart icon"></i>
+    </div>
+</div>
+
+    <img src="https://image.shutterstock.com/image-illustration/panorama-cartoon-fruits-vegetables-holding-260nw-654726076.jpg">
+
+    <form class="ui form" name="itemForm">
+    <div class="ui negative message" ng-show=" (itemForm.quantity.$valid==false)||(itemForm.$valid==false && !itemForm.$pristine)">
+        <div class="header">
+            Invalid input
+        </div>
+       </div>
+       <div class="field">
+       <input type="text" ng-pattern="/^[a-zA-Z]+$/" name="item"placeholder="Add an item" ng-model="newitem.name" required>
+       <input type="text" ng-pattern="/^[0-9]+$/" name="quantity"placeholder="Quantity" ng-model="newitem.quantity" value="{{newitem.quantity}}" required>
+        </div>
+       <input class="ui button" type="submit" value="Save" ng-click=" itemForm.quantity.$valid && itemForm.item.$valid && save()" >
+       <a href="#/"><input class="ui button" type="submit" value="Cancel"></a>
+   </form>
